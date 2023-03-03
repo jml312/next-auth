@@ -18,7 +18,7 @@ export default function Spotify<P extends SpotifyProfile>(
     name: "Spotify",
     type: "oauth",
     authorization:
-      "https://accounts.spotify.com/authorize?scope=user-read-email",
+      "https://accounts.spotify.com/authorize?scope=user-read-email%20user-read-recently-played",
     token: "https://accounts.spotify.com/api/token",
     userinfo: "https://api.spotify.com/v1/me",
     profile(profile) {
